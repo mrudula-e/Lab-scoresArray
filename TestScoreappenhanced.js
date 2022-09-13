@@ -9,15 +9,15 @@ var show = "The test scores:\n";
 // use a do-while loop to get scores from user
 do {
     entry = prompt("Enter test score\n" +
-                   "Or enter 999 to end entries", 0);
+                   "Or enter 999 to end entries", 999);
     entry = parseInt(entry);
-   // document.write('<h2> <i><center>Test Score<i> <span id = "result"></span>'+entry+' </center></h2>');
+   //document.write('<h2> <i><center>Test Score<i> <span id = "result"></span>'+entry+' </center></h2>');
     if (entry >= 0 && entry <= 100) {
         scores[scores.length] = entry;
     } else if (entry != 999){
       
         alert("Entry must by a valid number from 0 through 100\n" +
-              "Or enter 999 to end entries",0);
+              "Or enter 999 to end entries", 999);
     }
 }
 while (entry != 999); 
